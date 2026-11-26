@@ -1,0 +1,23 @@
+<suite name="Cybersoft Automation Suite" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="com.automation.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Register and Login Flow">
+        <classes>
+            <class name="com.automation.tests.RegisterTest">
+                <methods>
+                    <include name="registerSuccessfully"/>
+                    <include name="registerWithExistingEmail"/>
+                </methods>
+            </class>
+            <class name="com.automation.tests.LoginTest">
+            <methods>
+                <include name="loginWithValidCredentials"/>
+                <include name="loginWithInvalidCredentials"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
