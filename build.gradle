@@ -1,0 +1,103 @@
+
+
+plugins {
+
+    id 'java'
+    id 'io.qameta.allure' version '4.3.1' // Add the Allure plugin (auto open report after tests)
+}
+
+group = 'com.automation'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.38.0'
+
+    // TestNG
+    testImplementation 'org.testng:testng:7.11.0'
+
+    // Allure
+    implementation 'io.qameta.allure:allure-testng:2.35.1'
+
+    // Logging
+    implementation 'org.slf4j:slf4j-api:2.0.17'
+    implementation 'ch.qos.logback:logback-classic:1.5.18'
+
+    // Commons IO
+    implementation 'commons-io:commons-io:2.20.0'
+
+    // Random String Generator
+    testImplementation 'net.datafaker:datafaker:2.4.2'
+}
+
+test {
+    useTestNG()
+
+    // Clean up allure-results and screenshots before running tests
+    doFirst {
+        delete layout.buildDirectory.dir("allure-results")
+        delete layout.buildDirectory.dir("reports/allure-report")
+        delete layout.buildDirectory.dir("reports/allure-single")
+        delete "${projectDir}/allure-results"
+    }
+}
+
+tasks.named("test") {
+    finalizedBy("allureReport")
+}
+
+allure {
+    version = '2.35.1' //
+    adapter {
+        aspectjWeaver.set(true)
+        frameworks {
+            testng {
+                adapterVersion.set('2.35.1')
+            }
+        }
+    }
+}
+
+test {
+    useTestNG()
+
+    doFirst {
+        // Chỉ nạp file testng.xml khi không có bộ lọc chạy lẻ (--tests) từ IntelliJ hoặc Terminal
+        if (filter.includePatterns.isEmpty() && filter.commandLineIncludePatterns.isEmpty()) {
+            options.suites('src/test/resources/testng.xml')
+        }
+        delete layout.buildDirectory.dir("allure-results")
+        delete "${projectDir}/allure-results"
+    }
+
+    finalizedBy 'allureReport'
+}
+
+
+//test {
+//    // Use TestNG and specify the testng.xml file
+//    useTestNG() {
+//        // Only run the testng.xml file if no specific tests are specified in the command line
+//        if (project.gradle.startParameter.taskNames.every { !it.contains('--tests') } && filter.commandLineIncludePatterns.isEmpty()) {
+//            suites 'src/test/resources/testng.xml'
+//        }
+//
+//    }
+//
+//    // Clean up allure-results and screenshots before running tests
+//    doFirst {
+//        delete layout.buildDirectory.dir("allure-results")
+//        delete "${projectDir}/allure-results"
+//    }
+//    // Generate Allure report after tests
+//    finalizedBy 'allureReport'
+//
+//
+//
+//
+//}
