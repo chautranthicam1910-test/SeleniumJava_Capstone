@@ -1,0 +1,116 @@
+2026-11-26 20:20:01.195 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: registerSuccessfully ==========
+2026-11-26 20:20:01.225 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //a[@href='/sign-up']
+2026-11-26 20:20:02.293 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'douglaskozey931' into element: By.id: taiKhoan
+2026-11-26 20:20:04.415 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Tbf3v#!7' into element: By.id: matKhau
+2026-11-26 20:20:06.517 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Tbf3v#!7' into element: By.id: confirmPassWord
+2026-11-26 20:20:08.606 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'myrl.berge@gmail.com' into element: By.id: email
+2026-11-26 20:20:10.700 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Mathew Schaefer' into element: By.id: hoTen
+2026-11-26 20:20:12.762 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[.//span[text()='Đăng ký']]
+2026-11-26 20:20:13.812 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.xpath: //h2[text()='Đăng ký thành công']
+2026-11-26 20:20:15.893 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Đăng ký thành công], Actual: [Đăng ký thành công]
+2026-11-26 20:20:15.905 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: registerSuccessfully ==========
+2026-11-26 20:20:18.104 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: registerWithExistingEmail ==========
+2026-11-26 20:20:18.110 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //a[@href='/sign-up']
+2026-11-26 20:20:19.163 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'douglaskozey931' into element: By.id: taiKhoan
+2026-11-26 20:20:21.303 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Tbf3v#!7' into element: By.id: matKhau
+2026-11-26 20:20:23.390 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Tbf3v#!7' into element: By.id: confirmPassWord
+2026-11-26 20:20:25.481 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'myrl.berge@gmail.com' into element: By.id: email
+2026-11-26 20:20:27.606 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Mathew Schaefer' into element: By.id: hoTen
+2026-11-26 20:20:29.712 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[.//span[text()='Đăng ký']]
+2026-11-26 20:20:30.766 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.xpath: //div[@class='MuiAlert-message']
+2026-11-26 20:20:32.303 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Email đã tồn tại!], Actual: [Email đã tồn tại!]
+2026-11-26 20:20:32.306 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: registerWithExistingEmail ==========
+2026-11-26 20:20:34.330 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: clickBuyTicket ==========
+2026-11-26 20:20:34.337 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //h4[contains(text(),'Lịch Chiếu')]
+2026-11-26 20:20:35.379 [Test worker] INFO  com.automation.utils.LogUtils - Hovering on: By.xpath: //a[contains(@href, '/detail/') and .//*[contains(text(), 'AVATAR 2')]] and clicking: By.xpath: //a[contains(@href, '/detail/') and .//*[contains(text(), 'AVATAR 2')]]//a[text()='MUA VÉ']
+2026-11-26 20:20:38.522 [Test worker] INFO  com.automation.utils.LogUtils - Checking if element is displayed: By.xpath: //a[normalize-space()='Mua vé']
+2026-11-26 20:20:40.075 [Test worker] INFO  com.automation.utils.LogUtils - Asserting true -> (Fail: Detail page does not show!)
+2026-11-26 20:20:40.076 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.xpath: //h1[contains(text(), 'AVATAR 2')]
+2026-11-26 20:20:41.114 [Test worker] INFO  com.automation.utils.LogUtils - Asserting true -> (Fail: Movie title does not match!)
+2026-11-26 20:20:41.116 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: clickBuyTicket ==========
+2026-11-26 20:20:43.117 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: clickBuyTicketWithoutSelectingCinemaBranch ==========
+2026-11-26 20:20:43.124 [Test worker] INFO  com.automation.utils.LogUtils - Selecting option 'AVATAR 2' from dropdown: By.xpath: //select[@name='film']
+2026-11-26 20:20:45.774 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //span[normalize-space()='MUA VÉ NGAY']
+2026-11-26 20:20:46.832 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.id: swal2-title
+2026-11-26 20:20:47.864 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Bạn chưa chọn rạp], Actual: [Bạn chưa chọn rạp]
+2026-11-26 20:20:47.865 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[contains(text(),'Đã hiểu')]
+2026-11-26 20:20:48.914 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: clickBuyTicketWithoutSelectingCinemaBranch ==========
+2026-11-26 20:20:50.878 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: clickBuyTicketWithoutSelectingMovie ==========
+2026-11-26 20:20:50.883 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //span[normalize-space()='MUA VÉ NGAY']
+2026-11-26 20:20:53.506 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.id: swal2-title
+2026-11-26 20:20:54.532 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Bạn chưa chọn phim], Actual: [Bạn chưa chọn phim]
+2026-11-26 20:20:54.532 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[contains(text(),'Đã hiểu')]
+2026-11-26 20:20:55.574 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: clickBuyTicketWithoutSelectingMovie ==========
+2026-11-26 20:20:57.707 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: clickBuyTicketWithoutSelectingShowtime ==========
+2026-11-26 20:20:57.712 [Test worker] INFO  com.automation.utils.LogUtils - Selecting option 'AVATAR 2' from dropdown: By.xpath: //select[@name='film']
+2026-11-26 20:21:00.594 [Test worker] INFO  com.automation.utils.LogUtils - Selecting option 'CGV - Golden Plaza' from dropdown: By.xpath: //select[@name='cinema']
+2026-11-26 20:21:01.641 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //span[normalize-space()='MUA VÉ NGAY']
+2026-11-26 20:21:02.756 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.id: swal2-title
+2026-11-26 20:21:04.318 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Bạn chưa chọn ngày giờ chiếu], Actual: [Bạn chưa chọn ngày giờ chiếu]
+2026-11-26 20:21:04.319 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[contains(text(),'Đã hiểu')]
+2026-11-26 20:21:05.377 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: clickBuyTicketWithoutSelectingShowtime ==========
+2026-11-26 20:21:07.907 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: closeTrailerSuccess ==========
+2026-11-26 20:21:07.918 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //h4[contains(text(),'Lịch Chiếu')]
+2026-11-26 20:21:08.975 [Test worker] INFO  com.automation.utils.LogUtils - Hovering on: By.xpath: //a[contains(@href, '/detail/') and .//*[contains(text(), 'AVATAR 2')]] and clicking: By.xpath: //a[contains(@href, '/detail/') and .//*[contains(text(), 'AVATAR 2')]]//img[@alt='video-button']/ancestor::button
+2026-11-26 20:21:11.463 [Test worker] INFO  com.automation.utils.LogUtils - Checking if element is displayed: By.xpath: //div[@class='modal-video' and @role='dialog']
+2026-11-26 20:21:13.040 [Test worker] INFO  com.automation.utils.LogUtils - Asserting true -> (Fail: Popup trailer does not show!)
+2026-11-26 20:21:13.040 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[@class='modal-video-close-btn']
+2026-11-26 20:21:14.091 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: closeTrailerSuccess ==========
+2026-11-26 20:21:17.150 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: playTrailerSuccess ==========
+2026-11-26 20:21:17.157 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //h4[contains(text(),'Lịch Chiếu')]
+2026-11-26 20:21:18.200 [Test worker] INFO  com.automation.utils.LogUtils - Hovering on: By.xpath: //a[contains(@href, '/detail/') and .//*[contains(text(), 'AVATAR 2')]] and clicking: By.xpath: //a[contains(@href, '/detail/') and .//*[contains(text(), 'AVATAR 2')]]//img[@alt='video-button']/ancestor::button
+2026-11-26 20:21:20.683 [Test worker] INFO  com.automation.utils.LogUtils - Checking if element is displayed: By.xpath: //div[@class='modal-video' and @role='dialog']
+2026-11-26 20:21:22.229 [Test worker] INFO  com.automation.utils.LogUtils - Asserting true -> (Fail: Popup trailer does not show!)
+2026-11-26 20:21:22.231 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: playTrailerSuccess ==========
+2026-11-26 20:21:24.152 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: searchMovie ==========
+2026-11-26 20:21:24.163 [Test worker] INFO  com.automation.utils.LogUtils - Selecting option 'AVATAR 2' from dropdown: By.xpath: //select[@name='film']
+2026-11-26 20:21:26.765 [Test worker] INFO  com.automation.utils.LogUtils - Selecting option 'CGV - Golden Plaza' from dropdown: By.xpath: //select[@name='cinema']
+2026-11-26 20:21:27.848 [Test worker] INFO  com.automation.utils.LogUtils - Selecting index '1' from dropdown: By.xpath: //select[@name='date']
+2026-11-26 20:21:28.915 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //span[normalize-space()='MUA VÉ NGAY']
+2026-11-26 20:21:29.987 [Test worker] INFO  com.automation.utils.LogUtils - Checking if element is displayed: By.xpath: //span[contains(text(),'ĐẶT VÉ')]
+2026-11-26 20:21:33.599 [Test worker] INFO  com.automation.utils.LogUtils - Asserting true -> (Fail: Purchase page does not show!)
+2026-11-26 20:21:33.600 [Test worker] INFO  com.automation.utils.LogUtils - Checking if element is displayed: By.xpath: //h3[normalize-space()='AVATAR 2']
+2026-11-26 20:21:34.625 [Test worker] INFO  com.automation.utils.LogUtils - Asserting true -> (Fail: Movie name does not match!)
+2026-11-26 20:21:34.627 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: searchMovie ==========
+2026-11-26 20:21:38.188 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: selectMovieShowtime ==========
+2026-11-26 20:21:38.196 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //h4[contains(text(),'Cụm Rạp')]
+2026-11-26 20:21:39.247 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //img[@alt='cgv']
+2026-11-26 20:21:40.313 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //h4[normalize-space()='CGV - Golden Plaza']
+2026-11-26 20:21:41.929 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: (//div[contains(@id,'vertical-tabpanel')]//img[@alt='AVATAR 2']/following::a[contains(@href,'/purchase/')])[1]
+2026-11-26 20:21:43.002 [Test worker] INFO  com.automation.utils.LogUtils - Checking if element is displayed: By.xpath: //span[contains(text(),'ĐẶT VÉ')]
+2026-11-26 20:21:47.133 [Test worker] INFO  com.automation.utils.LogUtils - Asserting true -> (Fail: Purchase page does not show!)
+2026-11-26 20:21:47.134 [Test worker] INFO  com.automation.utils.LogUtils - Checking if element is displayed: By.xpath: //h3[normalize-space()='AVATAR 2']
+2026-11-26 20:21:48.164 [Test worker] INFO  com.automation.utils.LogUtils - Asserting true -> (Fail: Movie name does not match!)
+2026-11-26 20:21:48.166 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: selectMovieShowtime ==========
+2026-11-26 20:21:50.151 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: loginWithEmptyPassword ==========
+2026-11-26 20:21:50.158 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //a[@href='/sign-in']
+2026-11-26 20:21:51.240 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'test231026' into element: By.id: taiKhoan
+2026-11-26 20:21:53.360 [Test worker] INFO  com.automation.utils.LogUtils - Typing text '' into element: By.id: matKhau
+2026-11-26 20:21:55.440 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[.//span[text()='Đăng nhập']]
+2026-11-26 20:21:56.510 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.id: matKhau-helper-text
+2026-11-26 20:21:57.534 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Đây là trường bắt buộc !], Actual: [Đây là trường bắt buộc !]
+2026-11-26 20:21:57.537 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: loginWithEmptyPassword ==========
+2026-11-26 20:21:59.510 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: loginWithEmptyUsername ==========
+2026-11-26 20:21:59.519 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //a[@href='/sign-in']
+2026-11-26 20:22:01.029 [Test worker] INFO  com.automation.utils.LogUtils - Typing text '' into element: By.id: taiKhoan
+2026-11-26 20:22:03.116 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'test231026' into element: By.id: matKhau
+2026-11-26 20:22:05.296 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[.//span[text()='Đăng nhập']]
+2026-11-26 20:22:06.370 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.id: taiKhoan-helper-text
+2026-11-26 20:22:07.393 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Đây là trường bắt buộc !], Actual: [Đây là trường bắt buộc !]
+2026-11-26 20:22:07.394 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: loginWithEmptyUsername ==========
+2026-11-26 20:22:09.585 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: loginWithInvalidCredentials ==========
+2026-11-26 20:22:09.593 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //a[@href='/sign-in']
+2026-11-26 20:22:10.679 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'invalidUser' into element: By.id: taiKhoan
+2026-11-26 20:22:12.845 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'invalidPass' into element: By.id: matKhau
+2026-11-26 20:22:14.921 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[.//span[text()='Đăng nhập']]
+2026-11-26 20:22:15.979 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.xpath: //div[@class='MuiAlert-message']
+2026-11-26 20:22:17.534 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Tài khoản hoặc mật khẩu không đúng], Actual: [Tài khoản hoặc mật khẩu không đúng!]
+2026-11-26 20:22:18.131 [Test worker] ERROR com.automation.utils.LogUtils - ========== KẾT QUẢ [FAIL]: loginWithInvalidCredentials | Lý do: expected [Tài khoản hoặc mật khẩu không đúng] but found [Tài khoản hoặc mật khẩu không đúng!] ==========
+2026-11-26 20:22:20.281 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: loginWithValidCredentials ==========
+2026-11-26 20:22:20.288 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //a[@href='/sign-in']
+2026-11-26 20:22:21.947 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'douglaskozey931' into element: By.id: taiKhoan
+2026-11-26 20:22:24.072 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Tbf3v#!7' into element: By.id: matKhau
+2026-11-26 20:22:26.172 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[.//span[text()='Đăng nhập']]
+2026-11-26 20:22:27.237 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.xpath: //h2[text()='Đăng nhập thành công']
+2026-11-26 20:22:28.793 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Đăng nhập thành công], Actual: [Đăng nhập thành công]
+2026-11-26 20:22:28.794 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: loginWithValidCredentials ==========

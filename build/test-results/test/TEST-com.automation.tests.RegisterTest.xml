@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.automation.tests.RegisterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-26T13:19:57.707Z" hostname="VN-Mac-HK74XNYXJ7" time="34.597">
+  <properties/>
+  <testcase name="registerSuccessfully" classname="com.automation.tests.RegisterTest" time="14.704"/>
+  <testcase name="registerWithExistingEmail" classname="com.automation.tests.RegisterTest" time="14.2"/>
+  <system-out><![CDATA[20:20:01.195 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: registerSuccessfully ==========
+20:20:01.225 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //a[@href='/sign-up']
+20:20:02.293 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'douglaskozey931' into element: By.id: taiKhoan
+20:20:04.415 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Tbf3v#!7' into element: By.id: matKhau
+20:20:06.517 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Tbf3v#!7' into element: By.id: confirmPassWord
+20:20:08.606 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'myrl.berge@gmail.com' into element: By.id: email
+20:20:10.700 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Mathew Schaefer' into element: By.id: hoTen
+20:20:12.762 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[.//span[text()='Đăng ký']]
+20:20:13.812 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.xpath: //h2[text()='Đăng ký thành công']
+20:20:15.893 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Đăng ký thành công], Actual: [Đăng ký thành công]
+20:20:15.905 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: registerSuccessfully ==========
+20:20:18.104 [Test worker] INFO  com.automation.utils.LogUtils - ========== BẮT ĐẦU TEST: registerWithExistingEmail ==========
+20:20:18.110 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //a[@href='/sign-up']
+20:20:19.163 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'douglaskozey931' into element: By.id: taiKhoan
+20:20:21.303 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Tbf3v#!7' into element: By.id: matKhau
+20:20:23.390 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Tbf3v#!7' into element: By.id: confirmPassWord
+20:20:25.481 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'myrl.berge@gmail.com' into element: By.id: email
+20:20:27.606 [Test worker] INFO  com.automation.utils.LogUtils - Typing text 'Mathew Schaefer' into element: By.id: hoTen
+20:20:29.712 [Test worker] INFO  com.automation.utils.LogUtils - Clicking on element: By.xpath: //button[.//span[text()='Đăng ký']]
+20:20:30.766 [Test worker] INFO  com.automation.utils.LogUtils - Getting text from element: By.xpath: //div[@class='MuiAlert-message']
+20:20:32.303 [Test worker] INFO  com.automation.utils.LogUtils - Asserting equals -> Expected: [Email đã tồn tại!], Actual: [Email đã tồn tại!]
+20:20:32.306 [Test worker] INFO  com.automation.utils.LogUtils - ========== KẾT QUẢ [PASS]: registerWithExistingEmail ==========
+]]></system-out>
+  <system-err><![CDATA[Nov 26, 2026 8:19:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 158
+Nov 26, 2026 8:19:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 158.0.8127.37. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.38.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Nov 26, 2026 8:20:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 158
+Nov 26, 2026 8:20:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 158.0.8127.37. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.38.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
